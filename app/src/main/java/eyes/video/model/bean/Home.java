@@ -20,4 +20,12 @@ public class Home {
     public void setMenuUrl(String menuUrl) {
         this.menuUrl = menuUrl;
     }
+
+    @Override
+    public String toString() {
+        return "Home{" +
+                "menutitle='" + menutitle + '\'' +
+                ", menuUrl='" + menuUrl + '\'' +
+                '}';
+    }
 }

@@ -29,4 +29,13 @@ public class Video {
     public void setImage(String image) {
         this.image = image;
     }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                ", image='" + image + '\'' +
+                '}';
+    }
 }
