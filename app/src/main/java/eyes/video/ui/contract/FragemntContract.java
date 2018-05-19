@@ -3,17 +3,10 @@ package eyes.video.ui.contract;
 import java.util.List;
 
 import eyes.video.base.BaseView;
-import eyes.video.model.bean.Home;
 import eyes.video.model.bean.Video;
 
-public interface MainActivityContract extends BaseView {
-    /**
-     * 设置菜单
-     *
-     * @param homes
-     */
-    void setMenu(List<Home> homes);
 
+public interface FragemntContract extends BaseView {
     /**
      * 设置推荐内容
      *
@@ -27,4 +20,11 @@ public interface MainActivityContract extends BaseView {
      * @param str
      */
     void showToas(String str);
+
+    /**
+     *
+     * @param nexturl
+     * @param lasturl
+     */
+    void geturl(String nexturl ,String lasturl);
 }
